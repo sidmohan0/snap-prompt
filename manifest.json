@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Snapshot Text Extractor",
+  "description": "Extract text from images using OpenAI's API",
+  "version": "1.0",
+  "permissions": ["activeTab", "tabs"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": ["popup.js"]
+}
