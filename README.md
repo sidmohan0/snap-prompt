@@ -1,15 +1,26 @@
-<img width="578" alt="image" src="https://user-images.githubusercontent.com/61345237/210965384-b692d214-fa04-47a0-98c2-d0698d3fa950.png">
 
 # snap-prompt
-Google Chrome extension for taking a snapshot of a prompt shown on an image or video still (for ChatGPT3, Mindjourney, etc)
-Snapshot Text Extractor
+Snapprompt
 
-Hello friends,
+## Overview
+Snapprompt is a Chrome extension that allows users to take a snapshot of an image or video and extract the text from it using OpenAI's API. The extracted text is displayed in a code block and can be copied to the clipboard.
 
-Are you tired of manually transcribing text from images and videos? Do you find yourself saying "I wish there was a way to just copy the prompts directly from my screen"? Well, have I got some news for you!
+## User Goals
+Easily extract text from images and videos
+Copy the extracted text to the clipboard
+## User Stories
+As a user, I want to be able to take a snapshot of an image or video, so that I can extract the text from it.
 
-Introducing Snapshot Text Extractor - the Chrome extension that lets you take a snapshot of an image or video and automatically extract the text using OpenAI's powerful API. Simply click the "Take snapshot" button, select the area you want to capture, and voila! The text will be displayed in a code block, ready for you to copy and paste.
+As a user, I want to be able to copy the extracted text to the clipboard, so that I can easily paste it into another document.
 
-So next time you're struggling to transcribe that pesky image of handwritten notes, just remember - Snapshot Text Extractor has got your back.
-
-Happy copying!
+## Technical Requirements
+Chrome extension that can be installed from the Chrome Web Store
+Ability to take a snapshot of the current tab using the Chrome tabs API
+Use of OpenAI's API to extract text from images
+UI for displaying the extracted text in a code block and adding a copy button
+## Technical Constraints
+Only works in the Chrome browser
+Requires an internet connection to use the OpenAI API
+## Assumptions
+The user has a valid OpenAI API key
+The user is running the latest version of Chrome
